@@ -10,8 +10,9 @@
         <title>BS Components Mail</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/index.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/index.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -45,8 +46,39 @@
             </nav>
         </header>
 
-        <main>
-
+        <main class="container py-3">
+            <div class="row">
+                <div class="col-12">
+                    <button class="mb-3 btn btn-lg btn-outline-primary w-100">
+                        <i class="bi bi-pencil-square"></i>
+                        New Email
+                    </button>
+                </div>
+                <div class="col-12">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-primary">
+                            <i class="bi bi-envelope-paper"></i>
+                            Inbox
+                        </button>
+                        <button type="button" class="btn btn-info">
+                            <i class="bi bi-envelope-paper"></i>
+                            Drafts
+                        </button>
+                        <button type="button" class="btn btn-success">
+                            <i class="bi bi-send-check"></i>
+                            Sent
+                        </button>
+                        <button type="button" class="btn btn btn-danger">
+                            <i class="bi bi-trash-fill"></i>
+                            Drafts
+                        </button>
+                        <button type="button" class="btn btn btn-warning">
+                            <i class="bi bi-exclamation-octagon"></i>
+                            Sent
+                        </button>
+                      </div>
+                </div>
+            </div>
 
 
 
@@ -57,7 +89,12 @@
                 <div class="row row-cols-1 row-cols-md-3">
                     <div class="col text-center text-md-start text-secondary">&copy; CoderFoundry 2023</div>
                     <div class="col text-center text-light  lead">Bootstrap Inbox</div>
-                    <div class="col text-center text-md-end"><!--social links--></div>
+                    <div class="col text-center text-md-end"><!--social links-->
+                        <a href="https://facebook.com" class="text-secondary" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com" class="text-secondary" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://twitter.com" class="text-secondary" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="mailto:angelcorralnunez@gmail.com" class="text-secondary" target="_blank"><i class="bi bi-envelope-at"></i></a>
+                    </div>
                 </div>
             </div>
         </footer>
