@@ -20,3 +20,8 @@ footer {
 }
 /*End Sticky Footer*/
 
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    color:#ffffff;
+    background-color: #6c757d !important;
+    border-color:#6c757d;
+}
