@@ -51,151 +51,171 @@
 
     <main class="container py-3">
         <div class="row g-3">
-            <div class="col-12 col-md-2">
+            <div class="col-12 col-md-2"> 
+                <!-- new email button -->
                 <button class="mb-3 btn btn-lg btn-outline-primary w-100" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
+                    data-bs-target="#newMessageModal">
                     <i class="bi bi-pencil-square"></i>
-                    New Email
+                    New Email 
                 </button>
-            </div>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="mb-3">
-                                <label for="sender-name" class="col-form-label">To:</label>
-                                <input type="text" class="form-control" id="sender-name">
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="recipient-name" class="col-form-label">Subject:</label>
-                                    <input type="text" class="form-control" id="recipient-name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message-text" class="col-form-label">Message:</label>
-                                    <textarea type="text" class="form-control" id="message-text" aria-label="Message" placeholder="Enter your message here..."
-                                    class="form-control" required rows="8" /></textarea>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger">Cancel</button>
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Save as Draft</button>
-                            <button type="button" class="btn btn-primary">Send</button>
-                        </div>
-                    </div>
+                
+                <!-- desktop btn group -->
+                <div class="btn-group-lg btn-group-vertical w-100 d-none d-md-block" role="group">
+                    <button type="button" class="btn btn-primary"> 
+                        <i class="bi bi-mailbox"></i> 
+                        Inbox 
+                    </button> 
+                    <button
+                        type="button" class="btn btn-info"> 
+                        <i class="bi bi-envelope-paper"></i> 
+                        Drafts 
+                    </button>
+                    <button type="button" class="btn btn-success"> 
+                        <i class="bi bi-send-check"></i> 
+                        Sent 
+                    </button>
+                    <button type="button" class="btn btn-danger"> 
+                        <i class="bi bi-trash"></i> 
+                        Trash 
+                    </button> 
+                    <button type="button" class="btn btn-warning"> 
+                        <i class="bi bi-exclamation-octagon"></i> 
+                        Spam 
+                    </button>
                 </div>
-            </div>
 
-            <div class="col-12">
-                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+                <!-- mobile btn group -->
+                <div class="btn-group-lg btn-group d-md-none" role="group"> 
                     <button type="button" class="btn btn-primary">
-                        <i class="bi bi-envelope-paper"></i>
-                        Inbox
-                    </button>
-                    <button type="button" class="btn btn-info">
-                        <i class="bi bi-envelope-paper"></i>
-                        Drafts
-                    </button>
-                    <button type="button" class="btn btn-success">
-                        <i class="bi bi-send-check"></i>
-                        Sent
-                    </button>
-                    <button type="button" class="btn btn btn-danger">
-                        <i class="bi bi-trash-fill"></i>
-                        Drafts
-                    </button>
-                    <button type="button" class="btn btn btn-warning">
-                        <i class="bi bi-exclamation-octagon"></i>
-                        Sent
-                    </button>
+                        <i class="bi bi-mailbox"></i> 
+                        Inbox 
+                    </button> 
+                    <button type="button" class="btn btn-info"> 
+                        <i class="bi bi-envelope-paper"></i> 
+                        Drafts 
+                    </button> 
+                    <button type="button"
+                        class="btn btn-success"> 
+                        <i class="bi bi-send-check"></i> 
+                        Sent 
+                    </button> 
+                    <button type="button"
+                        class="btn btn-danger"> 
+                        <i class="bi bi-trash"></i> 
+                        Trash 
+                    </button> 
+                    <button type="button" class="btn btn-warning"> 
+                        <i class="bi bi-exclamation-octagon"></i> 
+                        Spam 
+                    </button> 
+                </div>
+            </div>
+
+            <div class="col-12 col-md-10 border rounded-3 p-3"> 
+                <!-- inbox -->
+                <div class="list-group list-group-flush"> 
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action">
+                        <div> 
+                            <strong>Dane Whitman</strong> - Some Email Subject 
+                        </div>
+                        <p class="mb-1 px-5 text-secondary">The rest of the email content...</p>
+                    </a> 
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action">
+                        <div> 
+                            <strong>Dane Whitman</strong> - Some Email Subject 
+                        </div>
+                        <p class="mb-1 px-5 text-secondary">The rest of the email content...</p>
+                    </a> 
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action">
+                        <div> 
+                            <strong>Dane Whitman</strong> - Some Email Subject 
+                        </div>
+                        <p class="mb-1 px-5 text-secondary">The rest of the email content...</p>
+                    </a> 
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        class="list-group-item list-group-item-action">
+                        <div> 
+                            <strong>Dane Whitman</strong> - Some Email Subject 
+                        </div>
+                        <p class="mb-1 px-5 text-secondary">The rest of the email content...</p>
+                    </a> 
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action">
+                        <div> 
+                            <strong>Dane Whitman</strong> - Some Email Subject 
+                        </div>
+                        <p class="mb-1 px-5 text-secondary">The rest of the email content...</p>
+                    </a> 
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action">
+                        <div> 
+                            <strong>Dane Whitman</strong> - Some Email Subject 
+                        </div>
+                        <p class="mb-1 px-5 text-secondary">The rest of the email content...</p>
+                    </a> 
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action">
+                        <div> 
+                            <strong>Dane Whitman</strong> - Some Email Subject 
+                        </div>
+                        <p class="mb-1 px-5 text-secondary">The rest of the email content...</p>
+                    </a> 
                 </div>
             </div>
         </div>
 
-        <div class="col-12 border rounded-3 p-3">
-            <div class="list-group list-group-flush">
-                <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    class="list-group-item list-group-item-action">
-                    <div>
-                        <strong>Dane Whitman</strong> - Some Email Subject
-                    </div>
-                    <p class="mb-1 px-5 text-secondary">The rest of the email.</p>
-                </a>
-                <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    class="list-group-item list-group-item-action">
-                    <div>
-                        <strong>Dane Whitman</strong> - Some Email Subject
-                    </div>
-                    <p class="mb-1 px-5 text-secondary">The rest of the email.</p>
-                </a>
-                <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    class="list-group-item list-group-item-action">
-                    <div>
-                        <strong>Dane Whitman</strong> - Some Email Subject
-                    </div>
-                    <p class="mb-1 px-5 text-secondary">The rest of the email.</p>
-                </a>
-                <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    class="list-group-item list-group-item-action">
-                    <div>
-                        <strong>Dane Whitman</strong> - Some Email Subject
-                    </div>
-                    <p class="mb-1 px-5 text-secondary">The rest of the email.</p>
-                </a>
-                <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    class="list-group-item list-group-item-action">
-                    <div>
-                        <strong>Dane Whitman</strong> - Some Email Subject
-                    </div>
-                    <p class="mb-1 px-5 text-secondary">The rest of the email.</p>
-                </a>
-                <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    class="list-group-item list-group-item-action">
-                    <div>
-                        <strong>Dane Whitman</strong> - Some Email Subject
-                    </div>
-                    <p class="mb-1 px-5 text-secondary">The rest of the email.</p>
-                </a>
-                <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    class="list-group-item list-group-item-action">
-                    <div>
-                        <strong>Dane Whitman</strong> - Some Email Subject
-                    </div>
-                    <p class="mb-1 px-5 text-secondary">The rest of the email.</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Modal -->
+        <!-- Email Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">To: Dane Whitman</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"> To: Dane Whitman </h1> 
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <p class="fs-4">Subject: Some Email Subject</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse perferendis voluptatem
-                            repellendus fuga eius ut sed reiciendis quidem accusantium quia, architecto magni aperiam,
-                            libero quam nihil beatae vel! Veniam, doloremque? Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Esse perferendis voluptatem repellendus fuga eius ut sed reiciendis quidem
-                            accusantium quia, architecto magni aperiam, libero quam nihil beatae vel! Veniam,
-                            doloremque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse perferendis
-                            voluptatem repellendus fuga eius ut sed reiciendis quidem accusantium quia, architecto magni
-                            aperiam, libero quam nihil beatae vel! Veniam, doloremque?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis quae nemo voluptatem,
+                            dolor nisi quos minima minus ducimus harum assumenda accusamus doloribus laudantium commodi
+                            exercitationem deleniti, perspiciatis, quo ipsam placeat! Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Officiis quae nemo voluptatem, dolor nisi quos minima minus
+                            ducimus harum assumenda accusamus doloribus laudantium commodi exercitationem deleniti,
+                            perspiciatis, quo ipsam placeat! </p>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Reply</button>
+                    <div class="modal-footer"> 
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                        <button type="button" class="btn btn-primary">Reply</button> 
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- New Message Modal -->
+        <div class="modal fade" id="newMessageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <form action="#">
+                        <div class="modal-header">
+                            <!-- <div class="modal-title fs-5 d-flex w-100" id="exampleModalLabel"> --> 
+                            <label for="Recipient" class="form-label fs-5">To: </label> <input name="Recipient" class="form-control mx-3" type="email" /> 
+                            <!-- </div> --> 
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
+                        </div>
+                        <div class="modal-body">
+                            <div> 
+                                <label for="Subject" class="form-label">Subject:</label> 
+                                <input name="Subject" class="form-control" type="text" /> 
+                            </div>
+                            <div class="my-3"> 
+                                <label for="Message" class="form-label">Message:</label> 
+                                <textarea name="Message" class="form-control" type="text" placeholder="Enter your message here..." rows="5"></textarea> 
+                            </div>
+                        </div>
+                        <div class="modal-footer"> 
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button> 
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Save As Draft</button> <button type="submit" class="btn btn-primary">Send</button> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
@@ -217,10 +237,8 @@
         </div>
     </footer>
 
-    <script src="" async defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
+<!-- Bootstrap JS --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 
 </html>
