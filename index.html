@@ -53,62 +53,58 @@
         <div class="row g-3">
             <div class="col-12 col-md-2"> 
                 <!-- new email button -->
-                <button class="mb-3 btn btn-lg btn-outline-primary w-100" data-bs-toggle="modal"
-                    data-bs-target="#newMessageModal">
+                <a role="button" data-bs-toggle="modal" data-bs-target="#sendModal" class="mb-3 btn btn-lg btn-outline-primary w-100">
                     <i class="bi bi-pencil-square"></i>
-                    New Email 
-                </button>
+                    New Email
+                </a>
                 
-                <!-- desktop btn group -->
-                <div class="btn-group-lg btn-group-vertical w-100 d-none d-md-block" role="group">
-                    <button type="button" class="btn btn-primary"> 
-                        <i class="bi bi-mailbox"></i> 
-                        Inbox 
-                    </button> 
-                    <button
-                        type="button" class="btn btn-info"> 
-                        <i class="bi bi-envelope-paper"></i> 
-                        Drafts 
-                    </button>
-                    <button type="button" class="btn btn-success"> 
-                        <i class="bi bi-send-check"></i> 
-                        Sent 
-                    </button>
-                    <button type="button" class="btn btn-danger"> 
-                        <i class="bi bi-trash"></i> 
-                        Trash 
-                    </button> 
-                    <button type="button" class="btn btn-warning"> 
-                        <i class="bi bi-exclamation-octagon"></i> 
-                        Spam 
-                    </button>
-                </div>
-
-                <!-- mobile btn group -->
-                <div class="btn-group-lg btn-group d-md-none" role="group"> 
+                <!-- desktop vertical btn group -->
+                <div class="btn-group-vertical btn-group-lg col-12 d-none d-md-block" role="group">
                     <button type="button" class="btn btn-primary">
-                        <i class="bi bi-mailbox"></i> 
-                        Inbox 
-                    </button> 
-                    <button type="button" class="btn btn-info"> 
-                        <i class="bi bi-envelope-paper"></i> 
-                        Drafts 
-                    </button> 
-                    <button type="button"
-                        class="btn btn-success"> 
-                        <i class="bi bi-send-check"></i> 
-                        Sent 
-                    </button> 
-                    <button type="button"
-                        class="btn btn-danger"> 
-                        <i class="bi bi-trash"></i> 
-                        Trash 
-                    </button> 
-                    <button type="button" class="btn btn-warning"> 
-                        <i class="bi bi-exclamation-octagon"></i> 
-                        Spam 
-                    </button> 
-                </div>
+                        <i class="bi bi-mailbox"></i>
+                        Inbox
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <i class="bi bi-envelope-paper"></i>
+                        Drafts
+                    </button>
+                    <button type="button" class="btn btn-success">
+                        <i class="bi bi-send-check"></i>
+                        Sent
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                        <i class="bi bi-trash"></i>
+                        Trash
+                    </button>
+                    <button type="button" class="btn btn-warning">
+                        <i class="bi bi-exclamation-octagon"></i>
+                        Spam
+                    </button>
+                  </div>
+
+                <!-- mobile horizontal btn group -->
+                <div class="btn-group btn-group-lg col-12 d-md-none" role="group">
+                    <button type="button" class="btn btn-primary">
+                        <i class="bi bi-mailbox"></i>
+                        Inbox
+                    </button>
+                    <button type="button" class="btn btn-info">
+                        <i class="bi bi-envelope-paper"></i>
+                        Drafts
+                    </button>
+                    <button type="button" class="btn btn-success">
+                        <i class="bi bi-send-check"></i>
+                        Sent
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                        <i class="bi bi-trash"></i>
+                        Trash
+                    </button>
+                    <button type="button" class="btn btn-warning">
+                        <i class="bi bi-exclamation-octagon"></i>
+                        Spam
+                    </button>
+                  </div>
             </div>
 
             <div class="col-12 col-md-10 border rounded-3 p-3"> 
@@ -192,9 +188,10 @@
                 <div class="modal-content">
                     <form action="#">
                         <div class="modal-header">
-                            <!-- <div class="modal-title fs-5 d-flex w-100" id="exampleModalLabel"> --> 
-                            <label for="Recipient" class="form-label fs-5">To: </label> <input name="Recipient" class="form-control mx-3" type="email" /> 
-                            <!-- </div> --> 
+                            <div class="modal-title fs-5 d-flex w-100" id="exampleModalLabel"> 
+                            <label for="Recipient" class="form-label fs-5">To: </label> 
+                            <input name="Recipient" class="form-control mx-3" type="email" /> 
+                            </div> 
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
                         </div>
                         <div class="modal-body">
@@ -209,7 +206,8 @@
                         </div>
                         <div class="modal-footer"> 
                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button> 
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Save As Draft</button> <button type="submit" class="btn btn-primary">Send</button> 
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Save As Draft</button> 
+                            <button type="submit" class="btn btn-primary">Send</button> 
                         </div>
                     </form>
                 </div>
