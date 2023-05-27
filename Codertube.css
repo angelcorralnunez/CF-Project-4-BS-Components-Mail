@@ -40,9 +40,9 @@ footer {
 */
 
 /* 
-another way to trunctae text
+another way to truncate text
 .line-clamp {
-    dispaly: -webkit-box;
+    display: -webkit-box;
     -webkit-line-clamp: 1;
     line-clamp: 1;
     overflow: hidden;
